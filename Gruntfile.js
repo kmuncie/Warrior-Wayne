@@ -20,15 +20,15 @@ module.exports = function(grunt) {
 			}
 		},
 
-		jshint: {
-			options: {
-				jshintrc: '.jshintrc'
-			},
-			all: [
-				'Gruntfile.js',
-				'<%= app %>/js/**/*.js'
-			]
-		},
+		// jshint: {
+		// 	options: {
+		// 		jshintrc: '.jshintrc'
+		// 	},
+		// 	all: [
+		// 		'Gruntfile.js',
+		// 		'<%= app %>/js/**/*.js'
+		// 	]
+		// },
 
 		clean: {
 			dist: {
@@ -154,6 +154,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
-	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
 };
