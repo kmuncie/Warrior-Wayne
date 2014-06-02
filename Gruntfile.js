@@ -56,7 +56,7 @@ module.exports = function(grunt) {
 				}]
 			}
 		},
-		
+
 		uglify: {
 			options: {
 				preserveComments: 'some',
@@ -131,10 +131,10 @@ module.exports = function(grunt) {
 				]
 			}
 		}
-		
+
 	});
 
-	
+
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-clean');

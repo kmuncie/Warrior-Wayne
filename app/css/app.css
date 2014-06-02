@@ -1584,23 +1584,34 @@ blockquote, blockquote p {
 .wayne1 {
   background-image: url(/images/wayne1.jpg);
   background-size: cover;
-  background-position: center;
-  min-height: 600px; }
+  background-repeat: no-repeat;
+  min-height: 400px;
+  margin-top: -50px; }
 
 .heroTitle {
   font-size: 2rem;
-  padding-top: 20px;
   text-align: center;
-  color: #050a0e; }
+  color: #edebf8;
+  text-shadow: 1px 1px 10px #000; }
   @media only screen and (min-width:64.063em) {
     .heroTitle {
-      text-align: left;
+      text-align: right;
       font-size: 4rem;
-      padding-top: 10px; } }
+      margin-top: 500px; } }
 
 @media only screen and (min-width:40.063em) {
   .topSpace {
     margin-top: 100px; } }
 
-#skrollr-body {
-  overflow: visible !important; }
+.mobile body {
+  overflow: hidden; }
+
+.mobile #wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
+.mobile #scroller {
+  height: 3000px; }

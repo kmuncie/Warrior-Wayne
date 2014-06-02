@@ -1,25 +1,29 @@
-var app = (function(document, $) {
+(function(){
+  var ua = navigator.userAgent,
+    isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
 
-	'use strict';
-	var docElem = document.documentElement,
+  if (isMobileWebkit) {
+    $('html').addClass('mobile');
+  }
 
-		_userAgentInit = function() {
-			docElem.setAttribute('data-useragent', navigator.userAgent);
-		},
-		_init = function() {
-			$(document).foundation();
-			_userAgentInit();
-		};
+  $(function(){
+    var iScrollInstance;
 
-	return {
-		init: _init
-	};
+    if (isMobileWebkit) {
+      iScrollInstance = new iScroll('wrapper');
 
-})(document, jQuery);
-
-(function() {
-
-	'use strict';
-	app.init();
+      $('#scroller').stellar({
+        scrollProperty: 'transform',
+        positionProperty: 'transform',
+        horizontalScrolling: false,
+        verticalOffset: 150
+      });
+    } else {
+      $.stellar({
+        horizontalScrolling: false,
+        verticalOffset: 150
+      });
+    }
+  });
 
 })();
