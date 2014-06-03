@@ -10,18 +10,18 @@
     var iScrollInstance;
 
     if (isMobileWebkit) {
-      iScrollInstance = new iScroll('wrapper');
+      iScrollInstance = new IScroll('#wrapper');
 
       $('#scroller').stellar({
         scrollProperty: 'transform',
         positionProperty: 'transform',
         horizontalScrolling: false,
-        verticalOffset: 150
+        // verticalOffset: 150
       });
     } else {
       $.stellar({
         horizontalScrolling: false,
-        verticalOffset: 150
+        // verticalOffset: 150
       });
     }
   });

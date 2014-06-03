@@ -9,8 +9,10 @@
    background-image: url(/images/wayne1.jpg);
    background-size: cover;
    background-repeat: no-repeat;
-   min-height: 400px;
-   margin-top: -50px;
+   @media #{$medium-up} {
+      margin-top: -50px;
+      min-height: 400px;
+   }
 }
 
 .heroTitle {
@@ -26,6 +28,7 @@
 }
 
 .topSpace {
+   margin-top: 20px;
    @media #{$medium-up} {
       margin-top: 100px;
    }
@@ -45,4 +48,11 @@
 
 .mobile #scroller {
   height: 3000px;
+}
+
+h2 {
+   font-size: 1.5rem;
+   @media #{$medium-up} {
+      font-size: 3rem;
+   }
 }
