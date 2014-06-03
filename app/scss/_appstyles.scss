@@ -9,8 +9,9 @@
    background-image: url(/images/wayne1.jpg);
    background-size: cover;
    background-repeat: no-repeat;
+   min-height: 200px;
    @media #{$medium-up} {
-      margin-top: -50px;
+      // margin-top: -50px;
       min-height: 400px;
    }
 }
@@ -20,10 +21,11 @@
    text-align: center;
    color: $offWhite;
    text-shadow: 1px 1px 10px #000;
-   @media #{$large-up} {
+   margin-top: 200px;
+   @media #{$medium-up} {
       text-align: right;
       font-size: 4rem;
-      margin-top: 500px;
+      margin-top: 400px;
    }
 }
 
@@ -47,7 +49,7 @@
 }
 
 .mobile #scroller {
-  height: 3000px;
+  height: 2000px;
 }
 
 h2 {

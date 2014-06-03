@@ -327,12 +327,12 @@ meta.foundation-mq-small {
   width: 0em; }
 
 meta.foundation-mq-medium {
-  font-family: "/only screen and (min-width:40.063em)/";
-  width: 40.063em; }
+  font-family: "/only screen and (min-width:38.063em)/";
+  width: 38.063em; }
 
 meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:64.063em)/";
-  width: 64.063em; }
+  font-family: "/only screen and (min-width:54.063em)/";
+  width: 54.063em; }
 
 meta.foundation-mq-xlarge {
   font-family: "/only screen and (min-width:90.063em)/";
@@ -628,7 +628,7 @@ select {
   .column.small-uncentered.opposite, .columns.small-uncentered.opposite {
     float: right; } }
 
-@media only screen and (min-width:40.063em) {
+@media only screen and (min-width:38.063em) {
   .medium-push-0 {
     position: relative;
     left: 0%;
@@ -895,7 +895,7 @@ select {
     right: 91.66667%;
     left: auto; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:54.063em) {
   .large-push-0 {
     position: relative;
     left: 0%;
@@ -1174,7 +1174,7 @@ select {
 .text-justify {
   text-align: justify !important; }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 38em) {
   .small-only-text-left {
     text-align: left !important; }
   .small-only-text-right {
@@ -1194,7 +1194,7 @@ select {
   .small-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:40.063em) and (max-width:64em) {
+@media only screen and (min-width:38.063em) and (max-width:54em) {
   .medium-only-text-left {
     text-align: left !important; }
   .medium-only-text-right {
@@ -1204,7 +1204,7 @@ select {
   .medium-only-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:40.063em) {
+@media only screen and (min-width:38.063em) {
   .medium-text-left {
     text-align: left !important; }
   .medium-text-right {
@@ -1214,7 +1214,7 @@ select {
   .medium-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:64.063em) and (max-width:90em) {
+@media only screen and (min-width:54.063em) and (max-width:90em) {
   .large-only-text-left {
     text-align: left !important; }
   .large-only-text-right {
@@ -1224,7 +1224,7 @@ select {
   .large-only-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:54.063em) {
   .large-text-left {
     text-align: left !important; }
   .large-text-right {
@@ -1470,7 +1470,7 @@ blockquote, blockquote p {
   border: none;
   padding: 0 0.08333rem; }
 
-@media only screen and (min-width:40.063em) {
+@media only screen and (min-width:38.063em) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
   h1 {
@@ -1584,26 +1584,27 @@ blockquote, blockquote p {
 .wayne1 {
   background-image: url(/images/wayne1.jpg);
   background-size: cover;
-  background-repeat: no-repeat; }
-  @media only screen and (min-width:40.063em) {
+  background-repeat: no-repeat;
+  min-height: 200px; }
+  @media only screen and (min-width:38.063em) {
     .wayne1 {
-      margin-top: -50px;
       min-height: 400px; } }
 
 .heroTitle {
   font-size: 2rem;
   text-align: center;
   color: #edebf8;
-  text-shadow: 1px 1px 10px #000; }
-  @media only screen and (min-width:64.063em) {
+  text-shadow: 1px 1px 10px #000;
+  margin-top: 200px; }
+  @media only screen and (min-width:38.063em) {
     .heroTitle {
       text-align: right;
       font-size: 4rem;
-      margin-top: 500px; } }
+      margin-top: 400px; } }
 
 .topSpace {
   margin-top: 20px; }
-  @media only screen and (min-width:40.063em) {
+  @media only screen and (min-width:38.063em) {
     .topSpace {
       margin-top: 100px; } }
 
@@ -1618,10 +1619,10 @@ blockquote, blockquote p {
   width: 100%; }
 
 .mobile #scroller {
-  height: 3000px; }
+  height: 2000px; }
 
 h2 {
   font-size: 1.5rem; }
-  @media only screen and (min-width:40.063em) {
+  @media only screen and (min-width:38.063em) {
     h2 {
       font-size: 3rem; } }
