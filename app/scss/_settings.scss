@@ -20,7 +20,7 @@ $rem-base: 12px;
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
-// $base-font-size: 100%;
+$base-font-size: 120%;
 
 // The $base-font-size is 100% while $base-line-height is 150%
 // $base-line-height: 150%;
@@ -41,7 +41,7 @@ $rem-base: 12px;
 // Global
 
 $black: #050a0e;
-$offWhite: #edebf8;
+$offwhite: #edebf8;
 $brown: #2b130e;
 $yellow: #bfa940;
 $green: #5d852c;
@@ -129,7 +129,7 @@ $large-range: (54.063em, 90em);
 $header-font-family: 'Permanent Marker', $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-$header-font-color: $yellow;
+$header-font-color: $offwhite;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;

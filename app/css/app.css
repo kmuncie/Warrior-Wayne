@@ -354,7 +354,7 @@ html, body {
   box-sizing: border-box; }
 
 html, body {
-  font-size: 100%; }
+  font-size: 120%; }
 
 body {
   background: url(/images/light_toast.png) repeat #FFF;
@@ -1310,14 +1310,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Permanent Marker', 'Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #bfa940;
+  color: #edebf8;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   line-height: 1.4; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
-    color: #d5c683;
+    color: #f3f2fa;
     line-height: 0; }
 
 h1 {
@@ -1340,7 +1340,7 @@ h6 {
 
 .subheader {
   line-height: 1.4;
-  color: #d5c683;
+  color: #f3f2fa;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem; }
@@ -1438,15 +1438,15 @@ blockquote {
   blockquote cite {
     display: block;
     font-size: 1.08333rem;
-    color: #cebc6c; }
+    color: #f1f0fa; }
     blockquote cite:before {
       content: "\2014 \0020"; }
     blockquote cite a, blockquote cite a:visited {
-      color: #cebc6c; }
+      color: #f1f0fa; }
 
 blockquote, blockquote p {
   line-height: 1.6;
-  color: #d5c683; }
+  color: #f3f2fa; }
 
 /* Microformats */
 .vcard {
@@ -1602,11 +1602,17 @@ blockquote, blockquote p {
       font-size: 4rem;
       margin-top: 400px; } }
 
-.topSpace {
-  margin-top: 20px; }
-  @media only screen and (min-width:38.063em) {
-    .topSpace {
-      margin-top: 100px; } }
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.aBeer {
+  padding: 2em 0 0 0; }
+  .aBeer h2 {
+    padding: 5px 15px;
+    background-color: #0d0d3a; }
 
 .mobile body {
   overflow: hidden; }
