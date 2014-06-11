@@ -1591,7 +1591,7 @@ blockquote, blockquote p {
       min-height: 400px; } }
 
 .heroTitle {
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
   color: #edebf8;
   text-shadow: 1px 1px 10px #000;
@@ -1613,6 +1613,8 @@ blockquote, blockquote p {
   .aBeer h2 {
     padding: 5px 15px;
     background-color: #0d0d3a; }
+  .aBeer img {
+    max-height: 200px; }
 
 .mobile body {
   overflow: hidden; }
@@ -1631,4 +1633,4 @@ h2 {
   font-size: 1.5rem; }
   @media only screen and (min-width:38.063em) {
     h2 {
-      font-size: 3rem; } }
+      font-size: 2.5rem; } }
