@@ -1616,6 +1616,15 @@ blockquote, blockquote p {
   .aBeer img {
     max-height: 200px; }
 
+.meta {
+  margin: 0.5em 0; }
+  .meta.beerStyle {
+    color: #bfa940; }
+  .meta.beerABV {
+    color: #C43737; }
+  .meta.beerIBU {
+    color: #5d852c; }
+
 .mobile body {
   overflow: hidden; }
 
@@ -1634,3 +1643,37 @@ h2 {
   @media only screen and (min-width:38.063em) {
     h2 {
       font-size: 2.5rem; } }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot?fmhptw');
+  src: url('/fonts/icomoon.eot?#iefixfmhptw') format('embedded-opentype'), url('/fonts/icomoon.woff?fmhptw') format('woff'), url('/fonts/icomoon.ttf?fmhptw') format('truetype'), url('/fonts/icomoon.svg?fmhptw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-droplet:before {
+  content: "\e600"; }
+
+.icon-leaf:before {
+  content: "\e601"; }
+
+.icon-lab:before {
+  content: "\e602"; }
+
+.icon-lightning:before {
+  content: "\e603"; }
+
+.icon-cool:before {
+  content: "\e604"; }
