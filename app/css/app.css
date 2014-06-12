@@ -1625,6 +1625,10 @@ blockquote, blockquote p {
   .meta.beerIBU {
     color: #5d852c; }
 
+.socialRow h3 {
+  text-align: center;
+  color: #bfa940; }
+
 .mobile body {
   overflow: hidden; }
 
