@@ -35,6 +35,9 @@
 
 .right {
   text-align: right;
+  @media #{$small-only} {
+    text-align: left;
+  }
 }
 
 .aBeer {
@@ -49,21 +52,49 @@
 }
 
 .meta {
-  margin: .5em 0;
-  &.beerStyle {
-    color: $yellow;
-  }
-  &.beerABV {
-    color: $red;
-  }
-  &.beerIBU {
-    color: $green;
+  padding: 0 0.5rem 0 1.25rem;
+  p {
+    margin: .5em 0;
+    @media #{$small-only} {
+      font-size: 0.7rem;
+    }
+    &.beerStyle {
+      color: $yellow;
+    }
+    &.beerABV {
+      color: $red;
+    }
+    &.beerIBU {
+      color: $green;
+    }
   }
 }
 
-.socialRow h3 {
-  text-align: center;
-  color: $yellow;
+.socialRow {
+  margin-top: 2rem;
+  h3 {
+    text-align: center;
+    color: $yellow;
+  }
+}
+
+.footer {
+  p {
+    text-align: center;
+  }
+  a {
+    font-size: .3rem;
+    padding: 5px;
+    color: #777;
+    background-color: #FFF;
+    transition-duration: 500ms;
+    &:hover {
+      font-size: .7rem;
+      padding: 10px;
+      background-color: $green;
+      color: $offwhite;
+    }
+  }
 }
 
 .mobile body {
